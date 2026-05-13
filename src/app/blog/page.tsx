@@ -3,8 +3,8 @@ import { getSortedPostsData } from "@/lib/posts";
 import { ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "Blog - Stanford AI for Lean",
-  description: "Latest updates and research from the Stanford AI for Lean club.",
+  title: "Blog - Stanford Lean Club",
+  description: "Latest updates and research from the Stanford Lean Club.",
 };
 
 export default function Blog() {

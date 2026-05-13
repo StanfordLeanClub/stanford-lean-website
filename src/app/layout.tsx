@@ -19,8 +19,8 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: "Stanford AI for Lean",
-  description: "Advancing the use of AI in Lean theorem proving.",
+  title: "Stanford Lean Club",
+  description: "Advancing the formalization of mathematics in Lean.",
 };
 
 export default function RootLayout({

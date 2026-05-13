@@ -1,17 +1,17 @@
 ---
-title: "Welcome to Stanford AI for Lean"
+title: "Welcome to Stanford Lean Club"
 date: "2026-02-12"
-description: "Introducing our new club dedicated to the intersection of AI and formal theorem proving."
+description: "Introducing our new club dedicated to the formalization of mathematics in Lean."
 ---
 
-We are excited to announce the launch of the **Stanford AI for Lean** club!
+We are excited to announce the launch of the **Stanford Lean Club**!
 
 ## Our Mission
 
 Our goal is to bring together students and researchers interested in:
 
 - **Formal Verification**: Using tools like Lean 4 to mathematically prove the correctness of software and theorems.
-- **Artificial Intelligence**: Leveraging LLMs and other AI techniques to automate and assist in formalization.
+- **Formalization of Mathematics**: Contributing to Mathlib and formalizing modern mathematics in Lean.
 - **Education**: Teaching the next generation of mathematicians and computer scientists how to use these powerful tools.
 
 ## Why Lean?

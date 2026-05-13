@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Code } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/Button";
 
@@ -78,7 +78,7 @@ export default function Home() {
           
           <p className="text-xl text-stone-600 leading-relaxed text-balance font-light max-w-lg mx-auto lg:mx-0">
             We are a community of researchers and students at Stanford dedicated to
-            advancing the use of AI in <span className="font-medium text-stone-900">Lean theorem proving</span>.
+            advancing the <span className="font-medium text-stone-900">formalization of mathematics in Lean</span>.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
@@ -148,27 +148,6 @@ export default function Home() {
           </div>
         </motion.div>
       </div>
-      
-      {/* Logos / Social Proof */}
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ delay: 0.4, duration: 0.8 }}
-        className="mt-32 border-t border-stone-200 pt-16 text-center max-w-4xl mx-auto"
-      >
-        <p className="text-xs font-semibold text-stone-400 uppercase tracking-[0.2em] mb-10">Powered by modern formal methods</p>
-        <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
-           {/* Simple text logos for now */}
-           <div className="text-2xl font-serif font-black text-stone-800 tracking-tighter hover:text-[#8C1515] transition-colors">Stanford</div>
-           <div className="text-2xl font-sans font-black text-stone-800 tracking-tight hover:text-blue-600 transition-colors">Lean 4</div>
-           <div className="text-xl font-mono font-bold text-stone-800 hover:text-purple-600 transition-colors">Mathlib</div>
-           <div className="text-2xl font-sans font-bold text-stone-800 tracking-tight flex items-center gap-2 hover:text-orange-500 transition-colors">
-              <Code className="w-6 h-6" /> 
-              <span>Autoformalization</span>
-           </div>
-        </div>
-      </motion.div>
     </div>
   );
 }

@@ -9,26 +9,21 @@ import { cn } from "@/lib/utils";
 const navItems = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Team", path: "/about#team" },
+  { name: "Team", path: "/team" },
   { name: "Blog", path: "/blog" },
 ];
 
 export default function Navbar() {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
-  const [hash, setHash] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    const handleHash = () => setHash(window.location.hash);
-    handleHash();
     window.addEventListener("scroll", handleScroll);
-    window.addEventListener("hashchange", handleHash);
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("hashchange", handleHash);
     };
   }, []);
 
@@ -36,8 +31,8 @@ export default function Navbar() {
     <motion.nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 transition-all duration-300",
-        isScrolled 
-          ? "bg-stone-50/80 backdrop-blur-md border-b border-stone-200/50 shadow-sm" 
+        isScrolled
+          ? "bg-stone-50/80 backdrop-blur-md border-b border-stone-200/50 shadow-sm"
           : "bg-transparent border-transparent"
       )}
       initial={{ y: -100 }}
@@ -45,13 +40,11 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
     >
       <Link href="/" className="text-lg font-serif font-bold tracking-tight text-stone-900 hover:opacity-70 transition-opacity">
-        Stanford AI for Lean
+        Stanford Lean Club
       </Link>
       <div className="flex gap-6">
         {navItems.map((item) => {
-          const isActive = item.path.includes("#")
-            ? pathname + hash === item.path
-            : pathname === item.path && !hash;
+          const isActive = pathname === item.path;
           return (
             <Link
               key={item.path}

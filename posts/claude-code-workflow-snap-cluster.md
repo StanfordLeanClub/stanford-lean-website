@@ -1,12 +1,12 @@
 ---
 title: "Running Claude Code on Stanford's SNAP Cluster: A Real Research Workflow"
 date: "2026-03-17"
-description: "How we use Claude Code agents, tmux, and the SNAP cluster filesystem to run AI research experiments — a live demo walkthrough from the Lean AI Club."
+description: "How we use Claude Code agents, tmux, and the SNAP cluster filesystem to run formalization research experiments — a live demo walkthrough from the Stanford Lean Club."
 ---
 
 # Running Claude Code on Stanford's SNAP Cluster: A Real Research Workflow
 
-*From a live Lean AI Club session with Brando, William, Sri, Eshaan, and Matt Chen.*
+*From a live Stanford Lean Club session with Brando, William, Sri, Eshaan, and Matt Chen.*
 
 ---
 
@@ -269,7 +269,7 @@ In the next session we'll cover:
   author={Brando Miranda and William Peng and Srivatsava and Eshaan and Matt Chen},
   title={Running {Claude Code} on {Stanford}'s {SNAP} Cluster: A Real Research Workflow},
   year={2026},
-  howpublished={Stanford Lean {AI} Club Blog},
+  howpublished={Stanford Lean Club Blog},
   url={https://stanford-ai-for-lean-club.github.io/stanford-lean-website/blog/claude-code-workflow-snap-cluster/},
 }
 ```

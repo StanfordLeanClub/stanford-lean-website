@@ -75,7 +75,7 @@ Steps: draft → PR review → copy `drafts/final.md` → `posts/<slug>.md` with
 Every post must end with a **TL;DR** section followed by a BibTeX citation block.
 
 - **TL;DR:** 3–6 bullet points that summarize the concrete takeaways (commands, tools, decisions) a reader should walk away with. Placed immediately before the citation block, under an `## TL;DR` heading.
-- **Citation:** BibTeX block listing all authors (full names). Key format: `firstauthorYYYYslug`. Use `howpublished={Stanford Lean {AI} Club Blog}`. Fill in the real `url={...}` once the post is live (replace any `TODO` placeholder).
+- **Citation:** BibTeX block listing all authors (full names). Key format: `firstauthorYYYYslug`. Use `howpublished={Stanford Lean Club Blog}`. Fill in the real `url={...}` once the post is live (replace any `TODO` placeholder).
 
 **When drafting:** always read all 3 transcripts — `transcript_raw.txt`, `transcript_zoom_companion.txt`, and `transcript_summary_notes.txt`. The raw transcript contains technical details (exact commands, live problems encountered) that the summary will miss.
 
