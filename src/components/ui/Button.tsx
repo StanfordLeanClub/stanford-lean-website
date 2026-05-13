@@ -10,9 +10,11 @@ interface ButtonProps {
   href?: string;
   className?: string;
   variant?: "primary" | "outline";
+  target?: string;
+  rel?: string;
 }
 
-export const Button = ({ children, href, className, variant = "primary" }: ButtonProps) => {
+export const Button = ({ children, href, className, variant = "primary", target, rel }: ButtonProps) => {
   const baseClasses = "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-medium transition-all duration-300 transform-gpu";
   
   const variants = {
@@ -30,7 +32,7 @@ export const Button = ({ children, href, className, variant = "primary" }: Butto
   );
 
   if (href) {
-    return <Link href={href}>{content}</Link>;
+    return <Link href={href} target={target} rel={rel}>{content}</Link>;
   }
 
   return <button>{content}</button>;

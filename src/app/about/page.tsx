@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
-import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 
 const container = {
@@ -51,7 +50,7 @@ export default function About() {
             <ul className="space-y-4 relative z-10">
               {[
                 "Educate students on Lean 4 and formal verification.",
-                "Formalize mathematics and software, advancing the state of the art in theorem proving and verification.",
+                "Formalize mathematics and software, advancing the state of the art in theorem proving.",
                 "Collaborate with the global Lean community."
               ].map((text, i) => (
                 <li key={i} className="flex gap-3 items-start text-stone-700">
@@ -74,11 +73,15 @@ export default function About() {
               We welcome students from all backgrounds. Whether you&apos;re a mathematician, a computer scientist, or just curious about formal verification, there&apos;s a place for you here.
             </p>
             <div className="pt-4">
-              <Link href="mailto:contact@stanfordailean.com">
-                <Button variant="primary" className="bg-white text-stone-900 hover:bg-stone-100 hover:text-stone-900 border-none">
-                  Get in Touch
-                </Button>
-              </Link>
+              <Button
+                href="https://github.com/StanfordLeanClub"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="primary"
+                className="bg-white text-stone-900 hover:bg-stone-100 hover:text-stone-900 border-none"
+              >
+                Visit our GitHub
+              </Button>
             </div>
           </div>
         </motion.div>
