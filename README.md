@@ -49,7 +49,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 The public site is built as a static Next.js export and deployed by **GitHub Pages** via the `.github/workflows/deploy.yml` workflow. Every push to `main` runs the workflow, which builds `out/` and publishes it. No third-party service is required — if you can push to `main`, the site will update.
 
-**Current URL:** https://stanfordleanclub.github.io/stanford-lean-website/
+**Current URL:** https://stanfordlean.club
 
 A custom apex domain is tracked in #3 — once one is chosen and DNS is repointed to GitHub Pages, drop `basePath`/`assetPrefix` from `next.config.ts` and add a `public/CNAME` file with the chosen domain.
 
