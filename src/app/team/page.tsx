@@ -28,8 +28,16 @@ const leadership: TeamMember[] = [
     github: "https://github.com/brando90",
   },
   {
-    name: "Shurui Liu",
+    name: "Henry Bosch",
     role: "Vice President",
+    image: asset("/team/Henry.png"),
+    website: "https://web.stanford.edu/~hbosch/",
+    linkedin: "https://www.linkedin.com/in/henrybosch0/",
+    github: "https://github.com/henrybosch",
+  },
+  {
+    name: "Shurui Liu",
+    role: "Leadership",
     image: asset("/team/Shurui.jpg"),
     website: "https://shurui.people.stanford.edu/",
     github: "https://github.com/srliu3264",
@@ -42,12 +50,6 @@ const leadership: TeamMember[] = [
     website: "https://sites.google.com/view/fredraj/"
   },
   {
-    name: "Sophia Han",
-    role: "External Relations & Financial Officer",
-    image: asset("/team/sophia.png"),
-    linkedin: "https://www.linkedin.com/in/sophia-s-han-746135159/",
-  },
-  {
     name: "William Peng",
     role: "Infrastructure Lead",
     image: asset("/team/William.jpg"),
@@ -58,20 +60,6 @@ const leadership: TeamMember[] = [
     role: "Infrastructure Lead",
     image: asset("/team/holger.jpeg"),
     linkedin: "https://www.linkedin.com/in/holger-molin-911201255/",
-  },
-  {
-    name: "Henry Bosch",
-    role: "Math Lead",
-    image: asset("/team/Henry.png"),
-    website: "https://web.stanford.edu/~hbosch/",
-    linkedin: "https://www.linkedin.com/in/henrybosch0/",
-    github: "https://github.com/henrybosch",
-  },
-  {
-    name: "Jianfeng Xue",
-    role: "Media",
-    image: asset("/team/jianfeng.jpeg"),
-    linkedin: "https://www.linkedin.com/in/jxue7878/",
   },
   {
     name: "Matt Chen",
