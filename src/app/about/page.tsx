@@ -35,7 +35,7 @@ export default function About() {
               About Us
             </h1>
             <p className="text-lg text-stone-600 leading-relaxed">
-              The Stanford Lean Club was founded by Brando Miranda and is a student-run organization focused on the formalization of mathematics and software in Lean.
+              The Stanford Lean Club was founded by Brando Miranda and Henry Bosch and is a student-run organization focused on the formalization of mathematics and software in Lean.
             </p>
             <p className="text-lg text-stone-600 leading-relaxed">
               We believe that formal verification is the future of mathematics and software engineering, and we are dedicated to making it accessible to students and researchers at Stanford.

@@ -19,59 +19,37 @@ interface TeamMember {
 
 const leadership: TeamMember[] = [
   {
-    name: "Brando Miranda",
-    role: "President & Founder",
-    image: asset("/team/Brando.png"),
-    website: "https://brando90.github.io/brandomiranda/",
-    linkedin: "https://www.linkedin.com/in/brando-miranda-40821046/",
-    twitter: "https://x.com/BrandoHablando",
-    github: "https://github.com/brando90",
+    name: "Don Poindexter",
+    role: "President",
+    image: asset("/team/Don_Poindexter.jpg"),
+    github: "https://github.com/patternscientist",
   },
   {
     name: "Henry Bosch",
-    role: "Vice President",
+    role: "Vice President & Cofounder",
     image: asset("/team/Henry.png"),
     website: "https://web.stanford.edu/~hbosch/",
     linkedin: "https://www.linkedin.com/in/henrybosch0/",
     github: "https://github.com/henrybosch",
   },
   {
-    name: "Shurui Liu",
-    role: "Leadership",
-    image: asset("/team/Shurui.jpg"),
-    website: "https://shurui.people.stanford.edu/",
-    github: "https://github.com/srliu3264",
-    linkedin: "https://www.linkedin.com/in/shurui-liu-5161042a3/"
-  },
-  {
-    name: "Fred Rajasekaran",
-    role: "Financial Officer",
-    image: asset("/team/Fred.jpg"),
-    website: "https://sites.google.com/view/fredraj/"
-  },
-  {
-    name: "William Peng",
-    role: "Infrastructure Lead",
-    image: asset("/team/William.jpg"),
-    linkedin: "https://www.linkedin.com/in/williamgpeng/",
-  },
-  {
-    name: "Holger Molin",
-    role: "Infrastructure Lead",
-    image: asset("/team/holger.jpeg"),
-    linkedin: "https://www.linkedin.com/in/holger-molin-911201255/",
-  },
-  {
     name: "Matt Chen",
-    role: "Media",
+    role: "Financial Officer",
     image: asset("/team/matt.jpeg"),
     linkedin: "https://www.linkedin.com/in/matt-chen-ym/",
+    github: "https://github.com/cymcymcymcym",
   },
+];
+
+const alumni: TeamMember[] = [
   {
-    name: "Don Poindexter",
-    role: "Leadership",
-    image: asset("/team/Don_Poindexter.jpg"),
-    github: "https://github.com/patternscientist",
+    name: "Brando Miranda",
+    role: "Cofounder",
+    image: asset("/team/Brando.png"),
+    website: "https://brando90.github.io/brandomiranda/",
+    linkedin: "https://www.linkedin.com/in/brando-miranda-40821046/",
+    twitter: "https://x.com/BrandoHablando",
+    github: "https://github.com/brando90",
   },
 ];
 
@@ -172,6 +150,16 @@ export default function Team() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {leadership.map((member, index) => (
+            <TeamMemberCard key={index} member={member} />
+          ))}
+        </div>
+
+        <motion.div variants={item} className="border-b border-stone-200 pb-4 pt-8">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-stone-900">Alumni</h2>
+        </motion.div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+          {alumni.map((member, index) => (
             <TeamMemberCard key={index} member={member} />
           ))}
         </div>
